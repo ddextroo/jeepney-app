@@ -1,11 +1,11 @@
+import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
-import { router, useLocalSearchParams } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Icon } from '@/components/ui/icon';
-import { AppText } from '@/components/ui/text';
 import { Badge } from '@/components/ui/pill';
+import { AppText } from '@/components/ui/text';
 import { formatDistance, pathLengthKm } from '@/data/geo';
 import { RESOLVED_ROUTES } from '@/data/repository';
 import { routesPassingNear } from '@/data/search';

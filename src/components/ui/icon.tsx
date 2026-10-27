@@ -1,5 +1,5 @@
-import { ComponentProps } from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { ComponentProps } from 'react';
 
 import { palette } from '@/theme';
 

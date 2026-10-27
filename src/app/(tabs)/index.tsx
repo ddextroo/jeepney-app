@@ -1,20 +1,20 @@
+import { router } from 'expo-router';
 import { useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
-import { router } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { MapCameraHandle, ThemedMap } from '@/components/map/ThemedMap';
 import { RoundButton } from '@/components/map/map-controls';
-import { Icon } from '@/components/ui/icon';
-import { AppText } from '@/components/ui/text';
-import { SearchBar } from '@/components/ui/search-bar';
 import { BottomSheet, SheetSnap } from '@/components/ui/bottom-sheet';
 import { Button } from '@/components/ui/button';
+import { Icon } from '@/components/ui/icon';
 import { Badge } from '@/components/ui/pill';
+import { SearchBar } from '@/components/ui/search-bar';
+import { AppText } from '@/components/ui/text';
 import { formatDistance, metersBetween, pathLengthKm } from '@/data/geo';
-import { matchRoutes, routesPassingNear } from '@/data/search';
-import { RESOLVED_ROUTES } from '@/data/repository';
 import { JEEPNEY_KMH } from '@/data/journey';
+import { RESOLVED_ROUTES } from '@/data/repository';
+import { matchRoutes, routesPassingNear } from '@/data/search';
 import type { NearbyStop, ResolvedRoute } from '@/data/types';
 import { useUserLocation } from '@/hooks/use-user-location';
 import { palette, radius, shadows, spacing } from '@/theme';

@@ -23,4 +23,5 @@ export const ThemedMap = forwardRef<MapCameraHandle, ThemedMapProps>(function Th
   );
 });
 
-export type { ThemedMapProps, MapCameraHandle };
+export type { MapCameraHandle, ThemedMapProps };
+

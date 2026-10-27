@@ -1,11 +1,11 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { forwardRef, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import { StyleSheet, Text, View, type GestureResponderEvent, type LayoutChangeEvent } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 
 import type { ResolvedRoute, Stop } from '@/data';
 import { palette, radius, SELECTED_ROUTE_COLOR } from '@/theme';
 
-import { makeProjector, boundsOf } from './projection';
+import { boundsOf, makeProjector } from './projection';
 import type { MapCameraHandle, ThemedMapMode } from './ThemedMap';
 
 /** Deterministic PRNG so the "city" looks the same on every render. */

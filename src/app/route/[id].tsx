@@ -1,15 +1,15 @@
+import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useMemo, useState, type ComponentProps } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
-import { router, useLocalSearchParams } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { StopLadder } from '@/components/stop-ladder';
 import { FareChip } from '@/components/fare-chip';
-import { Icon } from '@/components/ui/icon';
-import { AppText } from '@/components/ui/text';
-import { Badge } from '@/components/ui/pill';
-import { Card } from '@/components/ui/card';
+import { StopLadder } from '@/components/stop-ladder';
 import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Icon } from '@/components/ui/icon';
+import { Badge } from '@/components/ui/pill';
+import { AppText } from '@/components/ui/text';
 import { getRoute } from '@/data/repository';
 import { faresForRoute } from '@/data/search';
 import { useSavedRoutes } from '@/state/saved-routes';

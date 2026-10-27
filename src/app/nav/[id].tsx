@@ -1,15 +1,15 @@
+import { router, useLocalSearchParams } from 'expo-router';
 import { useMemo } from 'react';
 import { Pressable, View } from 'react-native';
-import { router, useLocalSearchParams } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { ThemedMap } from '@/components/map/ThemedMap';
 import { RoundButton } from '@/components/map/map-controls';
 import { Icon, type IconName } from '@/components/ui/icon';
 import { AppText } from '@/components/ui/text';
-import { getRoute } from '@/data/repository';
-import { arrivalLabel, buildJourney, type JourneyStage } from '@/data/journey';
 import { formatDistance } from '@/data/geo';
+import { arrivalLabel, buildJourney, type JourneyStage } from '@/data/journey';
+import { getRoute } from '@/data/repository';
 import { useUserLocation } from '@/hooks/use-user-location';
 import { palette, radius, SELECTED_ROUTE_COLOR, spacing } from '@/theme';
 
